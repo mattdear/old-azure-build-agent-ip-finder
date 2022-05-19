@@ -14,5 +14,5 @@ func getHostIP(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/hostip", getHostIP)
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080")
 }
