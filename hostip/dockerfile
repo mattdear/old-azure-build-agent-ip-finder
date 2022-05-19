@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /clientip
+RUN go build -o ./clientip
 
 EXPOSE 8080
 
-CMD [ "/clientip" ]
+ENTRYPOINT ["./clientip"]
